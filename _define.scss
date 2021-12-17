@@ -1,0 +1,139 @@
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#qesbtc {
+    width: 100%;
+    height: 670px;
+    display: flex;
+    display: table-row;
+    background-image: url(img/urban-931.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.definicion {
+    display: grid;
+    grid-template-rows: auto;
+}
+.definicion h1 {
+    text-align: center;
+    color: rgb(0, 81, 255);
+    text-shadow: 1px 2px rgb(104, 104, 104);
+}
+.hleftDef {
+    margin-right: 20%;
+    color: rgb(255, 150, 13);
+    margin-left: 7%;
+    margin-top: 25px;
+    display:inline-flex;
+}
+.hleftDef h3 {
+    width: 15%;
+    font-size: 50px;
+}
+.hleftDef p {
+    text-align: justify;
+    color: rgb(21, 0, 209);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    width: 50%;
+    margin-left: 5px;
+}
+
+.hrightDef {
+    margin-left: 50%;
+    margin-top: 2%;
+    color: rgb(21, 0, 209);
+}
+.hrightDef h3 {
+    width: 15%;
+    font-size: 50px;
+    margin-left: 53%;
+}
+.hrightDef p {
+    text-align: justify;
+    color: rgb(255, 81, 0);
+    text-shadow: 1px rgb(255, 255, 255);
+    width: 70%;
+    margin-left: 120px;
+}
+h4 {
+    color:#ff9318;
+    background-color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+/* responsive */
+@media (min-width: 350px) and (max-width: 576px) {
+    body {
+        background-image: url(img/urban-931.png);
+    }
+    .container-fluid {
+        a {
+            font-size: 15px;
+            align-items: auto;
+        }
+    }
+    
+    #qesbtc {
+        width: 100%;
+        height: auto;
+        display: flex;
+        display: table-row;
+        background-image: url(/img/urban-931.png);
+        background-size: cover;
+        background-position: center;
+        
+        .hleftDef{
+            margin-right: 1px;
+            color: rgb(255, 150, 13);
+            margin-left: 2px;
+            margin-top: 3px;
+            display: list-item;
+        }
+
+            .hleftDef h3 {
+            text-align: left;
+            width: 100%;
+            font-size: 35px;
+            margin-left: 1px;
+            margin-top: 20px;
+            }
+            .hleftDef p {
+            text-align: justify;
+            color: rgb(21, 0, 209);
+            text-shadow: 1px 1px rgb(255, 255, 255);
+            width: 95%;
+            margin-left: 10px;
+            font-size: 15px;
+            }
+        
+    }
+
+    .hrightDef{
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-top: 5px;
+        display: list-item;
+    }
+    .hrightDef h3 {
+        width: 100%;
+        font-size: 35px;
+        margin-top: 20px;
+        margin-right: 3px;
+        margin-left: 50%;
+        color: rgb(255, 129, 25);
+        text-shadow: 1px 1px rgb(235, 237, 247);
+    }
+    .hrightDef p {
+        text-align: justify;
+        color: rgb(255, 211, 16);
+        text-shadow: 1px 1px rgb(116, 116, 116);
+        width: 95%;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+}

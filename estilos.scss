@@ -1,0 +1,197 @@
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* conexion entre scss */
+@import "_define";
+@import "_comprar";
+@import "_precio";
+@import "_noticias";
+@import "_educate";
+/* cierre conexion entre scss */
+
+/* variables generales */
+$bgcolor1: rgb(51, 51, 51);
+$colort1: rgb(255, 133, 19);
+$colortnav: rgb(238, 238, 238);
+    /* font famili */
+    $titulo1: 'Bangers';
+    $text:'Roboto', sans-serif;
+
+body {
+    background-color: $bgcolor1;
+    overflow-x: hidden;
+    display: grid;
+}
+header {
+    height: 100%;
+}
+
+#img_logo-navbar {
+    margin-left: 4%;
+    align-items: 40px;
+    filter: saturate(2)
+}
+.navbar-brand {
+    i {
+        font-weight: 700;
+        color: rgb(238, 238, 238);
+        text-shadow: 1px 1px #ff9100;
+    }
+}
+.navbar-nav {
+    margin-left: 50%;
+    margin-right: 1%;
+}
+#collapsibleNavbar{
+    align-items: auto flex-end;
+    margin-right: 3px;
+}
+
+
+.video {
+    position: absolute 200px;
+    height: 690px;
+    object-fit: cover;
+    display: flex;
+    display: grid;
+    padding: 0;
+    grid-area: 60%;
+    align-items: center;
+    background-color: rgb(175, 175, 175);
+    border-radius: 4px;
+
+    #header-contenido {
+        position: absolute;
+        width: 100%;
+            h1 {
+            text-transform: uppercase;
+            text-align: center;
+            place-items: center;
+            font-size: 230px;
+            font-family: $titulo1;
+            color: $colort1;
+            text-shadow: 2px 4px #494949;
+            }
+            p {
+                text-align: center;
+                place-items: center;
+                font-size: 30px;
+                font-family: $text;
+                color: rgb(255, 38, 0);
+                text-shadow: 2px 2px #c5c5c5;
+                background-color: white opacity($color: rgba(197, 199, 194, 0));
+                }
+    }
+}
+.carousel-item {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(46, 102, 255);
+    opacity: 90%;
+    height: 90px;
+        h6{
+            color: white;
+            font-size: 30px;
+        }
+        p{
+            color: white;
+            font-size: 30px;
+        }
+}
+/* Carousel variables*/
+$carousel-control-width:             2%;
+$carousel-control-opacity:           .4;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          4px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+$carousel-caption-width:             70%;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+$carousel-control-icon-width:        1rem;
+$carousel-transition-duration:       .30s;
+$carousel-transition: transform $carousel-transition-duration ease-in-out .30s;
+
+
+footer {
+    height: 100px;
+    z-index: 2;
+    .text-center {
+        height: 10px;
+        width: 100%;
+        margin-bottom: auto;
+        p {
+            font-size: 7px;
+        }
+    }
+}
+
+
+/* responsive */
+
+@media (min-width: 350px) and (max-width: 576px) {
+    * {
+        margin: 1px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar-collapse{
+        align-items: center;
+        font-size: 20px;
+    }
+    body {
+        background-image: url(img/cool-background.png);
+        overflow-x: hidden;
+        display: grid;
+        height: auto;
+    }
+    .video {
+        width: 0%;
+        #header-contenido {
+        position: absolute;
+        width: 100%;
+            h1 {
+            text-transform: uppercase;
+            text-align: center;
+            place-items: center;
+            font-size: 85px;
+            font-family: $titulo1;
+            color: $colort1;
+            text-shadow: 1px 2px #494949;
+            }
+            p {
+                text-align: center;
+                place-items: center;
+                font-size: 25px;
+                font-family: $text;
+                color: rgb(255, 38, 0);
+                text-shadow: 1px 1.2px #c5c5c5;
+                background-color: white opacity($color: rgba(197, 199, 194, 0));
+                }
+        }
+    }
+    .carousel-item {
+        text-align: center;
+        align-items: center;
+        background-color: rgb(46, 102, 255);
+        opacity: 90%;
+        height: 60px;
+        width: auto;
+            h6{
+                color: white;
+                font-size: 20px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+    }
+
+}
